@@ -40,7 +40,7 @@ main {
 a { color: var(--link); }
 
 .brand { font-weight: 600; margin: 0 0 24px; display: flex; align-items: center; gap: 10px; }
-.brand img { border-radius: 9px; }
+.brand img { border-radius: 22.37%; }
 
 h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.1; margin: 0 0 16px; }
 h2 { font-size: 1.6rem; line-height: 1.2; margin: 0 0 12px; }
