@@ -27,6 +27,56 @@
     <img class="hero-img" src="images/hero.jpg" alt="Tessy's Adjust photo screen on an iPhone and a print sheet on an iPhone Duo, next to a printed sheet of six ID photos" width="1600" height="686">
   </header>
 
+  <section class="previews" aria-labelledby="previews-title">
+    <h2 id="previews-title">See Tessy in action</h2>
+    <p class="section-lead">A 30-second tour on every device Tessy supports.</p>
+
+    <div class="preview-picker" hidden>
+      <div class="segmented" role="tablist" aria-label="Device">
+        <button type="button" role="tab" data-device="iphone" aria-selected="true">iPhone</button>
+        <button type="button" role="tab" data-device="duo" aria-selected="false" tabindex="-1">iPhone Duo</button>
+        <button type="button" role="tab" data-device="ipad" aria-selected="false" tabindex="-1">iPad</button>
+      </div>
+      <div class="segmented small" role="tablist" aria-label="iPhone Duo display" data-for="duo" hidden>
+        <button type="button" role="tab" data-variant="duo-closed" aria-selected="true">Closed</button>
+        <button type="button" role="tab" data-variant="duo-open" aria-selected="false" tabindex="-1">Open</button>
+      </div>
+      <div class="segmented small" role="tablist" aria-label="iPad orientation" data-for="ipad" hidden>
+        <button type="button" role="tab" data-variant="ipad-portrait" aria-selected="true">Portrait</button>
+        <button type="button" role="tab" data-variant="ipad-landscape" aria-selected="false" tabindex="-1">Landscape</button>
+      </div>
+    </div>
+
+    <div class="preview-stage">
+      <figure class="preview phone" id="preview-iphone" data-device="iphone">
+        <div class="screen"><video controls muted loop playsinline preload="none" width="886" height="1920" poster="videos/iphone-poster.jpg" aria-label="Tessy on iPhone: take an ID photo with live guides, clean up the background, and print a full sheet"><source src="videos/iphone.mp4" type="video/mp4"></video></div>
+        <figcaption>iPhone</figcaption>
+      </figure>
+      <figure class="preview phone" id="preview-duo-closed" data-device="duo">
+        <div class="screen"><video controls muted loop playsinline preload="none" width="886" height="1920" poster="videos/duo-closed-poster.jpg" aria-label="Tessy on iPhone Duo, closed: the same steps on the outer display"><source src="videos/duo-closed.mp4" type="video/mp4"></video></div>
+        <figcaption>iPhone Duo, closed</figcaption>
+      </figure>
+      <figure class="preview wide" id="preview-duo-open" data-device="duo">
+        <div class="screen"><video controls muted loop playsinline preload="none" width="1920" height="886" poster="videos/duo-open-poster.jpg" aria-label="Tessy on iPhone Duo, open: the camera, background, and print sheet side by side with their controls"><source src="videos/duo-open.mp4" type="video/mp4"></video></div>
+        <figcaption>iPhone Duo, open</figcaption>
+      </figure>
+      <figure class="preview tablet" id="preview-ipad-portrait" data-device="ipad">
+        <div class="screen"><video controls muted loop playsinline preload="none" width="1200" height="1600" poster="videos/ipad-portrait-poster.jpg" aria-label="Tessy on iPad in portrait: take an ID photo, change the background, and print a full sheet"><source src="videos/ipad-portrait.mp4" type="video/mp4"></video></div>
+        <figcaption>iPad, portrait</figcaption>
+      </figure>
+      <figure class="preview tablet" id="preview-ipad-landscape" data-device="ipad">
+        <div class="screen"><video controls muted loop playsinline preload="none" width="1600" height="1200" poster="videos/ipad-landscape-poster.jpg" aria-label="Tessy on iPad in landscape: take an ID photo, change the background, and print a full sheet"><source src="videos/ipad-landscape.mp4" type="video/mp4"></video></div>
+        <figcaption>iPad, landscape</figcaption>
+      </figure>
+    </div>
+
+    <div class="preview-controls" hidden>
+      <button type="button" class="pill" data-action="play" aria-pressed="false">Pause</button>
+      <button type="button" class="pill" data-action="sound" aria-pressed="false">Sound on</button>
+      <button type="button" class="pill" data-action="fullscreen">Full screen</button>
+    </div>
+  </section>
+
   <section class="steps" aria-labelledby="steps-title">
     <h2 id="steps-title">From photo to print sheet in four steps</h2>
     <ol>
@@ -144,5 +194,6 @@
     <p class="small">Tessy is developed by Dexter Ramos, an independent developer.</p>
   </footer>
 </main>
+<script src="previews.js" defer></script>
 </body>
 </html>
