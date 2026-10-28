@@ -4,197 +4,63 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tessy – ID photos, made simple</title>
-<meta name="description" content="Tessy helps you create ID, passport, and visa photos on your iPhone and iPad. Live camera guidance, framing to the official size, outfits, retouching, and true-size print sheets. Free, private, and processed entirely on your device.">
+<meta name="description" content="Make ID photos and everyday headshots on iPhone and iPad. Choose 1×1, 2×2 or a custom size, refine your photo, and arrange a ready-to-cut print sheet.">
 <link rel="canonical" href="https://blitzdex27.github.io/tessy-web/">
 <link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Tessy">
 <meta property="og:title" content="Tessy – ID photos, made simple">
-<meta property="og:description" content="Create ID, passport, and visa photos on your iPhone and iPad. Frame, refine, and print. Free, private, and processed on your device.">
+<meta property="og:description" content="From one photo to a ready-to-cut sheet. Custom sizes, optional headshot edits, and flexible photo layouts in one app.">
 <meta property="og:url" content="https://blitzdex27.github.io/tessy-web/">
-<meta property="og:image" content="https://blitzdex27.github.io/tessy-web/images/hero.jpg">
-<meta property="og:image:alt" content="Tessy on an iPhone and an iPhone Duo, next to a printed sheet of ID photos">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="home.css">
 </head>
 <body>
 <main>
   <header class="hero">
-    <p class="brand"><img src="images/apple-touch-icon.png" alt="" width="36" height="36"> Tessy</p>
-    <h1>ID photos, made simple.</h1>
-    <p class="lead">Frame. Refine. Print. Create passport, visa, and ID photos right on your iPhone or iPad, and print them at true size at home.</p>
-    <img class="hero-img" src="images/hero.jpg" alt="Tessy's Adjust photo screen on an iPhone and a print sheet on an iPhone Duo, next to a printed sheet of six ID photos" width="1600" height="686">
+    <nav aria-label="Main"><a class="brand" href="./"><img src="images/apple-touch-icon.png" alt="" width="40" height="40"> Tessy</a><a href="support/">Support</a></nav>
+    <div class="hero-grid">
+      <div><p class="eyebrow">YOUR PHOTO. YOUR SIZE. YOUR PRINT SHEET.</p>
+        <h1>ID photos,<br>made simple.</h1>
+        <p class="lead">Take or choose a photo, make the adjustments you want, and print a ready-to-cut sheet. One app on your iPhone or iPad.</p>
+        <p class="uses">For résumés, profiles, work and school badges, and everyday photo applications.</p>
+        <a class="button" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="print-illustration" role="img" aria-label="Illustration of a print sheet with six portrait copies, beside 1×1, 2×2 and custom-size labels">
+        <div class="size-chips"><span>1 × 1</span><span>2 × 2</span><span>Custom</span></div>
+        <div class="paper"><div class="portraits"><div class="portrait"><span class="head"></span><span class="shoulders"></span></div><div class="portrait"><span class="head"></span><span class="shoulders"></span></div><div class="portrait"><span class="head"></span><span class="shoulders"></span></div><div class="portrait"><span class="head"></span><span class="shoulders"></span></div><div class="portrait"><span class="head"></span><span class="shoulders"></span></div><div class="portrait"><span class="head"></span><span class="shoulders"></span></div></div></div>
+        <p>Frame. Refine. Print.</p>
+      </div>
+    </div>
   </header>
 
-  <section class="previews" aria-labelledby="previews-title">
-    <h2 id="previews-title">See Tessy in action</h2>
-    <p class="section-lead">A 30-second tour on every device Tessy supports.</p>
-
-    <div class="preview-picker" hidden>
-      <div class="segmented" role="tablist" aria-label="Device">
-        <button type="button" role="tab" data-device="iphone" aria-selected="true">iPhone</button>
-        <button type="button" role="tab" data-device="duo" aria-selected="false" tabindex="-1">iPhone Duo</button>
-        <button type="button" role="tab" data-device="ipad" aria-selected="false" tabindex="-1">iPad</button>
-      </div>
-      <div class="segmented small" role="tablist" aria-label="iPhone Duo display" data-for="duo" hidden>
-        <button type="button" role="tab" data-variant="duo-closed" aria-selected="true">Closed</button>
-        <button type="button" role="tab" data-variant="duo-open" aria-selected="false" tabindex="-1">Open</button>
-      </div>
-      <div class="segmented small" role="tablist" aria-label="iPad orientation" data-for="ipad" hidden>
-        <button type="button" role="tab" data-variant="ipad-portrait" aria-selected="true">Portrait</button>
-        <button type="button" role="tab" data-variant="ipad-landscape" aria-selected="false" tabindex="-1">Landscape</button>
-      </div>
-    </div>
-
-    <div class="preview-stage">
-      <figure class="preview phone" id="preview-iphone" data-device="iphone">
-        <div class="screen"><video controls muted loop playsinline preload="none" width="886" height="1920" poster="videos/iphone-poster.jpg" aria-label="Tessy on iPhone: take an ID photo with live guides, clean up the background, and print a full sheet"><source src="videos/iphone.mp4" type="video/mp4"></video></div>
-        <figcaption>iPhone</figcaption>
-      </figure>
-      <figure class="preview phone" id="preview-duo-closed" data-device="duo">
-        <div class="screen"><video controls muted loop playsinline preload="none" width="886" height="1920" poster="videos/duo-closed-poster.jpg" aria-label="Tessy on iPhone Duo, closed: the same steps on the outer display"><source src="videos/duo-closed.mp4" type="video/mp4"></video></div>
-        <figcaption>iPhone Duo, closed</figcaption>
-      </figure>
-      <figure class="preview wide" id="preview-duo-open" data-device="duo">
-        <div class="screen"><video controls muted loop playsinline preload="none" width="1920" height="886" poster="videos/duo-open-poster.jpg" aria-label="Tessy on iPhone Duo, open: the camera, background, and print sheet side by side with their controls"><source src="videos/duo-open.mp4" type="video/mp4"></video></div>
-        <figcaption>iPhone Duo, open</figcaption>
-      </figure>
-      <figure class="preview tablet" id="preview-ipad-portrait" data-device="ipad">
-        <div class="screen"><video controls muted loop playsinline preload="none" width="1200" height="1600" poster="videos/ipad-portrait-poster.jpg" aria-label="Tessy on iPad in portrait: take an ID photo, change the background, and print a full sheet"><source src="videos/ipad-portrait.mp4" type="video/mp4"></video></div>
-        <figcaption>iPad, portrait</figcaption>
-      </figure>
-      <figure class="preview tablet" id="preview-ipad-landscape" data-device="ipad">
-        <div class="screen"><video controls muted loop playsinline preload="none" width="1600" height="1200" poster="videos/ipad-landscape-poster.jpg" aria-label="Tessy on iPad in landscape: take an ID photo, change the background, and print a full sheet"><source src="videos/ipad-landscape.mp4" type="video/mp4"></video></div>
-        <figcaption>iPad, landscape</figcaption>
-      </figure>
-    </div>
-
-    <div class="preview-controls" hidden>
-      <button type="button" class="pill" data-action="play" aria-pressed="false">Pause</button>
-      <button type="button" class="pill" data-action="sound" aria-pressed="false">Sound on</button>
-      <button type="button" class="pill" data-action="fullscreen">Full screen</button>
-    </div>
-  </section>
-
-  <section class="steps" aria-labelledby="steps-title">
-    <h2 id="steps-title">From photo to print sheet in four steps</h2>
-    <ol>
-      <li>
-        <img src="images/shots/home.jpg" alt="Tessy's home screen with a Make an ID photo button and recent photos" width="600" height="1304" loading="lazy">
-        <h3>1. Start</h3>
-        <p>Tap Make an ID photo and pick the size you need.</p>
-      </li>
-      <li>
-        <img src="images/shots/session-start.jpg" alt="Capture screen for a Canada passport photo with its guidelines" width="600" height="1304" loading="lazy">
-        <h3>2. Take the photo</h3>
-        <p>See the ID's rules up front, then take a photo or choose one from your library.</p>
-      </li>
-      <li>
-        <img src="images/shots/adjust.jpg" alt="Adjust photo screen with Framing, Background, Outfit, and Retouch options" width="600" height="1304" loading="lazy">
-        <h3>3. Refine</h3>
-        <p>Adjust the framing, background, outfit, and retouching, all in one place.</p>
-      </li>
-      <li>
-        <img src="images/shots/print-sheet.jpg" alt="Print sheet filled with 15 copies of an ID photo on A4 paper" width="600" height="1304" loading="lazy">
-        <h3>4. Print</h3>
-        <p>Fill a sheet with copies, then print or export a PDF.</p>
-      </li>
+  <section id="how-it-works" class="section">
+    <p class="eyebrow">FROM PHOTO TO PAPER</p><h2>Four steps. One place.</h2>
+    <ol class="steps">
+      <li><span class="step-number">01</span><h3>Choose a size</h3><p>Start with 2 × 2 or 1 × 1 inches, or enter a custom width and height in millimetres.</p></li>
+      <li><span class="step-number">02</span><h3>Take or pick a photo</h3><p>Use camera guidance for framing, or choose a photo from your library.</p></li>
+      <li><span class="step-number">03</span><h3>Refine your headshot</h3><p>Adjust framing and choose optional background, outfit or retouching tools for a non-official photo.</p></li>
+      <li><span class="step-number">04</span><h3>Print your sheet</h3><p>Fill a page with copies, arrange a layout, then print with AirPrint or export a PDF.</p></li>
     </ol>
   </section>
 
-  <section class="features">
-    <div class="feature">
-      <div class="shots">
-        <img src="images/shots/choose-ids.jpg" alt="Choose IDs screen with sizes suggested for your region and two ticked" width="600" height="1304" loading="lazy">
-      </div>
-      <div>
-        <h2>Several IDs in one go.</h2>
-        <p>Need a passport photo and a 1 × 1 for work? Tick every size you need, and Tessy guides you through one photo for each. It suggests the sizes used in your region, with passport and visa sizes for 14 countries and regions plus common ID sizes.</p>
-      </div>
+  <section class="section feature-section">
+    <p class="eyebrow">A LITTLE PHOTO STUDIO</p><h2>The tools for the photo you need.</h2>
+    <div class="features">
+      <article><span class="feature-symbol" aria-hidden="true">↔</span><h3>Common and custom sizes</h3><p>Make 1 × 1 and 2 × 2 photos, or choose dimensions for a school badge, company application or another everyday use. Photo output is sized at 300 dpi.</p></article>
+      <article><span class="feature-symbol" aria-hidden="true">◐</span><h3>A different background</h3><p>For your non-official headshot, replace a distracting background with a solid colour or another background you choose.</p></article>
+      <article><span class="feature-symbol" aria-hidden="true">✧</span><h3>An optional new look</h3><p>Try suits and blazers for a résumé or profile headshot. Choose a cut, then move and resize the outfit to adjust its fit.</p></article>
+      <article><span class="feature-symbol" aria-hidden="true">⌖</span><h3>Retouch with control</h3><p>Choose the touch-ups you want. Use Touch or Painter, zoom into details, and use Heal, Clone or Restore on a non-official photo.</p></article>
+      <article><span class="feature-symbol" aria-hidden="true">▦</span><h3>A sheet your way</h3><p>Repeat a photo, mix photos on one page, or place them yourself in Custom Layout. Set the paper, margins and cut guides before printing.</p></article>
+      <article><span class="feature-symbol" aria-hidden="true">▱</span><h3>Ready for the next print</h3><p>Keep photos and layouts together in Tessy. Make several photo sizes in one session, reopen a saved layout, or share a finished JPEG.</p></article>
     </div>
-
-    <div class="feature reverse">
-      <div class="shots">
-        <img src="images/shots/camera.jpg" alt="Camera studio showing Perfect, hold still, with framing, level, eyes open, light, and steady checks all passing" width="600" height="1304" loading="lazy">
-      </div>
-      <div>
-        <h2>Checks as you shoot.</h2>
-        <p>Live guides show where your face and shoulders belong. Tessy checks framing, level, open eyes, light, and steadiness, tells you when it's just right, and can take the shot for you.</p>
-      </div>
-    </div>
-
-    <div class="feature">
-      <div class="shots">
-        <img src="images/shots/reframe.jpg" alt="Reframe screen with crown, eyes, and chin guide lines over the photo" width="600" height="1304" loading="lazy">
-      </div>
-      <div>
-        <h2>Framed to the official size.</h2>
-        <p>Guide lines for the crown, eyes, and chin show exactly where your head should sit for the ID you chose. Smart position lines it up for you in one tap.</p>
-      </div>
-    </div>
-
-    <div class="feature reverse">
-      <div class="shots two">
-        <img src="images/shots/outfit.jpg" alt="Outfit picker with suits and blazers in several colours" width="600" height="1304" loading="lazy">
-        <img src="images/shots/outfit-fit.jpg" alt="Outfit fit options for shoulder width and neckline" width="600" height="1304" loading="lazy">
-      </div>
-      <div>
-        <h2>Dress the part.</h2>
-        <p>Choose from 96 suits and blazers, then pick the cut that matches your shoulders and neckline. For passports and visas, outfits stay locked unless you choose otherwise, because many offices reject edited clothing.</p>
-      </div>
-    </div>
-
-    <div class="feature">
-      <div class="shots two">
-        <img src="images/shots/retouch-touch.jpg" alt="Spot retouch in Touch mode with Heal, Clone, and Restore tools" width="600" height="1304" loading="lazy">
-        <img src="images/shots/retouch-paint.jpg" alt="Spot retouch in Painter mode with a brush over the photo" width="600" height="1304" loading="lazy">
-      </div>
-      <div>
-        <h2>Gentle touch-ups.</h2>
-        <p>Soften a blemish or tidy stray hairs. Tap with Touch, or switch to Painter for precise brushing. Clone borrows from a clean area nearby, and Restore brings back the original.</p>
-      </div>
-    </div>
-
-    <div class="feature reverse">
-      <div class="shots two">
-        <img src="images/shots/print-arrange.jpg" alt="Arrange photos options: ready-made layouts, copy counts, fill the page, and drag to fill" width="600" height="1304" loading="lazy">
-        <img src="images/shots/paper-setup.jpg" alt="Paper setup with paper size, cut guides, alignment grid, and a ruler test page" width="600" height="1304" loading="lazy">
-      </div>
-      <div>
-        <h2>Prints true to size.</h2>
-        <p>Choose a ready-made layout, set how many copies you need, or fill the page. Cut guides help you trim, and a ruler test page checks that your printer prints at actual size.</p>
-      </div>
-    </div>
-
-    <div class="feature">
-      <div class="shots">
-        <img src="images/shots/photos.jpg" alt="Photos library with saved school, application, and work ID photos" width="600" height="1304" loading="lazy">
-      </div>
-      <div>
-        <h2>Your little photo studio.</h2>
-        <p>Every ID photo and print sheet stays in one place on your device, ready to reprint, re-crop, or share. Deleted something by mistake? It waits in Recently Deleted for 30 days.</p>
-      </div>
-    </div>
+    <p class="note">Photo checks offer guidance and cannot guarantee acceptance by an organisation. Always confirm the requirements for your use. <a href="support/">Read the FAQ</a>.</p>
   </section>
 
-  <section class="facts" aria-label="Tessy at a glance">
-    <ul>
-      <li><strong>Free</strong> to use</li>
-      <li><strong>Private</strong> – photos never leave your device</li>
-      <li><strong>No account</strong> needed</li>
-      <li><strong>No tracking</strong> or ads</li>
-      <li><strong>iPhone and iPad</strong></li>
-      <li>Available in <strong>English</strong></li>
-    </ul>
-  </section>
+  <section class="section privacy-panel"><div><p class="eyebrow">PRIVATE PHOTO PROCESSING</p><h2>Your photos are processed on your device.</h2><p>No account is needed. Tessy does not upload your photos to us. You choose what to share or export; your device’s backup settings may also apply.</p><a href="legal/privacy/">Read the Privacy Policy →</a></div><ul><li>iPhone and iPad</li><li>English, Spanish and French</li><li>No advertising or cross-app tracking</li></ul></section>
 
-  <footer>
-    <p><a href="support/">Support</a> · <a href="legal/privacy/">Privacy Policy</a> · <a href="legal/terms/">Terms of Use</a></p>
-    <p class="small">Tessy is developed by Dexter Ramos, an independent developer.</p>
-    <p class="small">© 2026 Dexter Ramos. iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
-  </footer>
+  <footer><a class="brand" href="./">Tessy</a><p><a href="support/">Support</a> · <a href="legal/privacy/">Privacy Policy</a> · <a href="legal/terms/">Terms of Use</a></p><p class="small">Developed by Dexter Ramos, an independent developer.<br>© 2026 Dexter Ramos. iPhone and iPad are trademarks of Apple Inc.</p></footer>
 </main>
-<script src="previews.js" defer></script>
 </body>
 </html>

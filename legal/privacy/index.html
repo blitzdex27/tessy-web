@@ -15,7 +15,7 @@
 
   <header class="page-header">
     <h1>Tessy Privacy Policy</h1>
-    <p class="effective-date">Effective October 23, 2026</p>
+    <p class="effective-date">Last updated October 29, 2026</p>
   </header>
 
   <p class="summary">The short version: Tessy processes your photos, including the face analysis it uses to check them, entirely on your device. We don't run any servers, we don't collect your photos, and we don't track you.</p>
@@ -23,11 +23,12 @@
   <p>Tessy ("the app," "we," "us") is developed by Dexter Ramos, an independent developer. This Privacy Policy explains what happens to your information when you use Tessy.</p>
 
   <section>
-    <h2>Information We Collect</h2>
+    <h2>Information the App Handles</h2>
     <ul>
-      <li><strong>Photos you provide.</strong> When you take or choose a photo to make an ID or passport photo, it's processed entirely on your device using Apple's on-device frameworks. It's stored locally in the app's database on your device and is never sent to us or to any server we operate, because we don't operate one.</li>
-      <li><strong>Purchase information.</strong> Tessy uses RevenueCat, a subscription management service, to check which in-app purchases are active. RevenueCat runs whenever the app is open, even while every feature is free. It receives an anonymous app user ID that it creates, your purchase and subscription status, and basic technical details that come with any internet request, such as the app and iOS version, your App Store country and your IP address. Payments are processed by Apple. Neither we nor RevenueCat ever see your card details.</li>
-      <li>We don't collect your name, email address, or other personal information, and Tessy doesn't require you to create an account.</li>
+      <li><strong>Photos you provide.</strong> When you take or choose a photo to make an ID photo or headshot, it's processed entirely on your device using Apple's on-device frameworks. It's stored locally in the app's database on your device and is never sent to us or to any server we operate, because we don't operate one.</li>
+      <li><strong>Purchase information.</strong> Tessy uses RevenueCat, a subscription management service, to check which in-app purchases are active. RevenueCat runs whenever the app is open, even while every feature is free. It receives an anonymous app user ID that it creates, your purchase and subscription status, and related technical details that come with any internet request, such as the app and iOS version, your App Store country and your IP address. Payments are processed by Apple. Neither we nor RevenueCat ever see your card details.</li>
+      <li><strong>No app account.</strong> Tessy does not ask for your name or email address in the app, and does not require you to create an account.</li>
+      <li><strong>Support messages.</strong> If you email support, we receive your email address and the information you choose to send, and use it to respond to your request. Please do not send identity documents or sensitive photos.</li>
     </ul>
   </section>
 
@@ -39,9 +40,9 @@
       <li><strong>Your body pose</strong>, such as where your shoulders and neck are, to size and place an optional digital outfit.</li>
       <li><strong>An outline of the person in the photo</strong>, to replace the background.</li>
     </ul>
-    <p>On devices with Apple Intelligence, Tessy may also give Apple's on-device language model short pieces of text, such as the photo check's measurements and results, the ID type, or a description you type, to word its advice and suggestions. It doesn't give the model your photo, and this also stays on your device.</p>
-    <p>Tessy doesn't use this data to identify you or anyone else, doesn't create face-recognition templates, and doesn't use the TrueDepth camera's depth data or ARKit face tracking. Face and body data is never sent to us, to RevenueCat or to anyone else, and it isn't used for advertising or tracking.</p>
-    <p>Most of this analysis exists only while Tessy is working on a photo. A few measurements, such as how tall your head is in the frame, where your eyes are and how far your head is tilted, are saved with the photo in the app's database on your device, so Tessy can show the photo's check results later. They're deleted when the photo is deleted (see <a href="#storage">Data Storage and Your Control</a>).</p>
+    <p>On compatible devices with Apple Intelligence, Tessy uses Apple’s on-device models for guidance and suggestions. These requests may include photo measurements, check results, the selected photo type and descriptions you enter. Where image-aware models are supported, a downsized copy of your photo may also be supplied to the on-device model for visual checks or optional retouch advice. This processing stays on your device; Tessy does not send these photos or prompts to us or to RevenueCat.</p>
+    <p>Tessy doesn't use this data to identify you or anyone else, doesn't create face-recognition templates, and doesn't use the TrueDepth camera's depth data or ARKit face tracking. Tessy does not upload face or body analysis to us or to RevenueCat, and does not use it for advertising or tracking. User-directed sharing and device backups are described below.</p>
+    <p>Face landmarks, body-pose analysis and subject masks are used while Tessy works on a photo. Tessy can save check results and warnings with the photo, along with its selected size and declared use, so it can show those results later. This local information is removed when the photo is permanently deleted from Tessy (see <a href="#storage">Data Storage and Your Control</a>).</p>
   </section>
 
   <section>
@@ -51,8 +52,8 @@
 
   <section id="storage">
     <h2>Data Storage and Your Control</h2>
-    <p>Your photos are stored only on your device, in the app's local database, together with the original photo you took or chose (so you can re-crop it later) and the measurements described above.</p>
-    <p>When you delete a photo in Tessy, it moves to Recently Deleted, where you can restore it for 30 days. After 30 days it's permanently removed. You can also erase it from Recently Deleted at any time. Uninstalling Tessy removes all data the app stored on your device.</p>
+    <p>Tessy stores photos in its local database, together with the original photo you took or chose (so you can re-crop it later), the photo’s declared use and saved check information. Tessy does not provide cloud photo syncing or upload these photos to us. Depending on your device settings, Apple’s device backup may include this app data. See <a href="https://support.apple.com/en-us/108770">what iCloud backs up</a>.</p>
+    <p>When you delete a photo in Tessy, it moves to Recently Deleted, where you can restore it for 30 days. After 30 days Tessy removes it when it next clears expired deleted photos. You can also erase it from Recently Deleted at any time. Uninstalling Tessy removes its local app data. Copies you shared, exported, saved to Photos or included in a device backup are managed by those destinations and settings.</p>
     <p>Tessy also keeps a small record of the achievements you've unlocked. It syncs between your devices through your own iCloud account, using Apple's iCloud key-value storage. It contains no photos, and we can't access it.</p>
     <p>Tessy asks for camera access to take photos and for permission to add photos to your photo library when you save one. When you choose a photo, you pick it with Apple's photo picker, so Tessy only sees the photos you pick. You can change these permissions at any time in the iPhone or iPad Settings app.</p>
   </section>
@@ -64,12 +65,12 @@
       <li><strong>Apple (iCloud)</strong> syncs your achievement progress between your devices.</li>
       <li><strong>RevenueCat</strong> manages purchase status, as described above. See <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a>.</li>
     </ul>
-    <p>We don't use any analytics, advertising, or tracking services.</p>
+    <p>Tessy does not include advertising or cross-app tracking. RevenueCat processes purchase-status and related technical information as described above; this is separate from photo processing.</p>
   </section>
 
   <section>
     <h2>Your Rights</h2>
-    <p>Depending on where you live, you may have rights over your personal data, such as access, correction, or deletion. We don't hold your photos or any account information, so your photos remain on your device under your control. RevenueCat's purchase records use an anonymous ID that we can't link to you by name. If you have a question or request, contact us at <a href="mailto:tessy.support@dekideks.com">tessy.support@dekideks.com</a>.</p>
+    <p>Depending on where you live, you may have rights over your personal data, such as access, correction, or deletion. Tessy does not upload your photos to us, and there is no Tessy account. Your local photos remain under your control. RevenueCat’s purchase records use a generated app user ID, as described above. Information you choose to send to support is handled separately. If you have a question or request, contact us at <a href="mailto:tessy.support@dekideks.com">tessy.support@dekideks.com</a>.</p>
   </section>
 
   <section>
@@ -79,7 +80,7 @@
 
   <section>
     <h2>International Users</h2>
-    <p>Tessy is available on the App Store in several countries and regions. Your photos and face data are processed and stored only on your device. Purchase status handled by RevenueCat may be processed in the United States.</p>
+    <p>Tessy is available on the App Store in several countries and regions. Photo and face analysis runs on your device; Tessy does not upload it to us. Your device-backup and export settings may also apply. Purchase status handled by RevenueCat may be processed in the United States.</p>
   </section>
 
   <section>
