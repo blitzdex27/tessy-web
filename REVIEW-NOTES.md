@@ -16,11 +16,16 @@ Prepared on codex/official-photo-locks. Not published; publication needs Dexter�
   guarantee an agency’s acceptance. Existing consumer-rights language remains.
 - Background lock is intentionally off while App Review’s answer is pending. Do not add a claim that all
   three tools are unavailable for official use until the single app policy switch is turned on.
-- New screenshots/previews are gated on App Review’s answer and separate capture approval. Add approved
-  headshot footage after that gate; the current homepage is complete and functional without demo media.
+- Updated media gate: Apple’s answer is not required. Show storyboards and store text before capture;
+  Dexter will explicitly approve simulator/capture runs then. Add approved headshot footage afterward.
+  The current homepage is complete and functional without demo media.
 - Before publishing: confirm the legal revisions’ publication date and recheck the selected release’s policy,
   pricing, App Store privacy labels and media. This branch does not publish or resubmit the app.
 
 Validation: all four pages’ local links/resources resolve; homepage checked at the browser’s 611-pixel
 viewport and a 390-pixel mobile iframe. Support, terms and privacy rendered and read in the browser.
 No wide-desktop, assistive-technology or live deployment verification is claimed.
+
+October 29 planning update: the same homepage was additionally reviewed at 1280px desktop width in the
+portable storyboard package. The package includes all four pages as a draft snapshot; website source
+remains authoritative here. No publication or new in-app media is implied by browser screenshots.
