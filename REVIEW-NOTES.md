@@ -42,3 +42,9 @@ remains authoritative here. No publication or new in-app media is implied by bro
 - Official use while the switch is OFF permits plain colors only, never image backdrops. App enforcement
   and regression checks are being verified before final capture. Switching to an official preset still clears all three edits.
 - Show real captures, final store text and all website pages before upload/publication.
+
+Final language clarification: screenshots and previews use English only. The store description and website retain the truthful availability of the app in English, Spanish and French. Restored the description sentence, homepage language bullet and support language FAQ; app localization files stay intact.
+
+## Permanent official-photo policy — latest decision
+
+Dexter has enabled the background lock permanently. This supersedes every interim OFF/pending-Apple note above. The current support FAQ uses the approved ON wording; terms describe all three tools as unavailable for official use, with no override. Users should take the photo against a plain, light background meeting their document’s requirements. App languages remain English, Spanish and French; screenshots/previews remain English. No publication has occurred.
