@@ -1,3 +1,23 @@
+# Current website review — October 31, 2026
+
+Prepared on codex/camera-picker-media-fit. Unpublished. This entry supersedes the historical plan below.
+
+- Outfits and every retouch/brush tool are removed from the app and all four website pages. Homepage
+  metadata now describes sizing, framing, checks and printing, including social previews.
+- Background tools remain only for general-use photos. The support lock FAQ is permanently ON, names
+  passport/visa/ICAO presets only there, and has no override or waiting-for-Apple exception.
+- Support explains clean-original adjustment with Save/Cancel, plus blocked legacy sharing/printing until
+  Save. The languages answer remains English, Spanish and French; media is English only.
+- Privacy removes outfit placement and retouch processing. Photo/subject analysis serves framing, checks,
+  camera guidance and general-use background isolation. Backup, deletion, on-device model and actual
+  purchase-status-service disclosures remain. Version 1.1.0 is completely free.
+- Draft legal pages are dated October 31. Reconfirm their publication date, release behavior, pricing and
+  privacy labels before publishing; no publication or App Store upload is authorized.
+- The portable v5 review snapshot includes home.css as well as shared legal CSS and images. An earlier
+  snapshot omitted home.css; this affected only local review styling, not the website source.
+
+## Historical review record (superseded where it differs)
+
 # General-photo website alignment — October 29, 2026
 
 Prepared on codex/general-photo-captures, continuing the approved review draft. Not published; publication needs Dexter’s approval.
