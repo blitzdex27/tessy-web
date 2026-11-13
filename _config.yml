@@ -1,0 +1,4 @@
+# GitHub Pages builds this site with Jekyll, which would publish these Markdown files as pages. They're for agents.
+exclude:
+  - AGENTS.md
+  - CLAUDE.md
